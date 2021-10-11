@@ -249,7 +249,6 @@
             <div class="row">
                 <div class="col-md-12">
                     <h3 class="section-title">Invited Speakers (Regular Presentations)</h3>
-                    <h3>TBA</h3>
                 </div>
             </div>
 
@@ -307,23 +306,23 @@
                 <div class="col-md-4">
 
                     <div class="speaker">
-                        <!-- <figure>
-                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/Ashutosh_Dhar.png">
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/Lenjani.jpg" style="border-radius:50%" data-toggle="popover" data-container="body" data-placement="top" data-content="Marzieh Lenjani is a last-year Ph.D. student in Computer Science at the University of Virginia, where she is advised by Professor Kevin Skadron. Marzieh’s research explores accelerator design for data-intensive applications, as well as characterization and optimization of applications on emerging devices. Her research has resulted in several publications at premier computer architecture venues (such as ISCA, HPCA, ASPLOS, and IISWC), one published patent, and two patent applications (funded by SRC). Marzieh’s work has been nominated for the best paper award at HPCA'20 and IISWC'19. She has also received the John A. Stankovic Graduate Research Award from the Computer Science Department at the University of Virginia for outstanding research.">
                         </figure>
 
-                        <h4>Ashutosh Dhar</h4>
-                        <p>University of Illinois,<br>Urbana-Champaign</p> -->
+                        <h4>Marzieh Lenjani</h4>
+                        <p>University of Virginia</p>
                     </div>
                 </div>
                 <div class="col-md-4">
 
                     <div class="speaker">
-                        <!-- <figure>
-                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/placeholder.png">
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/placeholder.png" style="border-radius:50%" data-toggle="popover" data-container="body" data-placemen="top" data-content="Quanquan C. Liu recently received her PhD in EECS from MIT where she is currently a postdoctoral scholar, working with Prof. Julian Shun. Her dissertation was advised by Prof. Erik D. Demaine and Prof. Julian Shun. Her current research focuses on parallel and distributed graph algorithms, scheduling algorithms, and dynamic algorithms/data structures. She has worked on a variety of problems in these domains including k-core decompositions, subgraph counting, maximal independent set, (\Delta + 1)-coloring, and near-linear time scheduling. Her other past research interests include cache-efficient and cache-adaptive algorithms/lower bounds, consensus, and memory-hard functions/proofs-of-space/proofs-of-memory. During the summer of 2020 she interned with Google’s discrete algorithms team as a student researcher working on various scheduling and routing algorithms research. Before that she was a summer research intern with the Digital Currency Initiative (with whom she is also currently a collaborator). She will be joining Northwestern’s CS theory group in February 2022 as a postdoctoral scholar.">
                         </figure>
 
-                        <h4>Daniel Richins</h4>
-                        <p>University of Texas,<br>Austin</p> -->
+                        <h4>Quanquan Liu</h4>
+                        <p>Massachusetts Institute of Technology</p>
                     </div>
                 </div>
 				<!--
@@ -360,7 +359,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-11">
-                    <h3 class="section-title">Program (Temptative)</h3>
+                    <h3 class="section-title">Program (Tentative)</h3>
                     (<em>all times are in Eastern Time</em>)
                     <p>
                     <table class="table table-hover">
@@ -386,8 +385,7 @@
                         </tr>
                         <tr>
                           <th scope="row">10:00 - 10:30am</th>
-                          <td data-toggle="popover" data-placement="top" data-container="body" data-content="
-                          Abstract"> Talk Title <br> Marzieh Lenjani ( University of Virginia ) </td> 
+                          <td data-toggle="popover" data-placement="top" data-container="body" data-content="Data processing requirements of big data and machine learning applications are outstripping the data transfer capacity of classic Von Neumann architectures. The main area where the current computing paradigm and architecture have lagged is data movement. The transfer of data from where it is stored, the off-chip memory, to where it is analyzed, the processor, takes one order of magnitude more time and consumes two orders of magnitude higher energy than the actual computation (e.g., a single-precision addition). Adding processing units as close as possible to the memory cells, i.e., processing in memory (PIM), alleviates the data movement overhead, unlocking the value of modern applications. However, realizing the true potential of PIM requires rethinking and simplifying the control, access, and communication mechanisms of PIM units. In my talk, I first discuss the inefficacy of traditional MIMD, SIMD, and SIMT architectures for data-intensive applications, with few computations per data element and challenges due to control and access divergence. Then, I introduce our proposed architectures, Fulcrum and FulcrumV2 (Gearbox), that offer a trade-off between (i) full control and access divergence support in MIMD and (ii) no/costly control or divergence support in SIMD/SIMT approaches. We show the flexibility of our design by mapping important kernels from different domains such as machine learning, database management, and graph processing. Finally, I conclude with our vision for identifying common requirements of data-intensive applications, designing a semi-general-purpose PIM-based accelerator (which supports a wide range of applications), and developing a software stack for our accelerator."> Rethinking Control, Access, and Communication Mechanisms for Data-intensive Applications <br> Marzieh Lenjani ( University of Virginia ) </td> 
                         </tr>
                         <tr>
                           <th scope="row">10:30 - 11:00am</th>
@@ -439,8 +437,9 @@
                         </tr>
                         <tr>
                           <th scope="row">05:15 - 05:45pm</th>
-                          <td data-toggle="popover" data-placement="top" data-container="body" data-content="
-                          Abstract"> Talk Title <br> Quanquan Liu ( Massachusetts Institute of Technology ) </td> 
+                          <td data-toggle="popover" data-placement="top" data-container="body" data-content="Maintaining a k-core decomposition quickly in a dynamic graph is an important problem in many applications, including social network analytics, graph visualization, centrality measure computations, and community detection algorithms. The main challenge for designing efficient k-core algorithms is that a single change to the graph can cause the decomposition to change significantly. We present the first parallel batch-dynamic algorithm for maintaining an approximate k-core decomposition that is efficient in both theory and practice. Given an initial graph with m edges, and a batch of B updates, our algorithm provably maintains a (2 + c)-approximation of the coreness values for all vertices (for any constant c > 0) in O(B log^2 m) amortized work and O(log^2 m log log m) depth (parallel time) with high probability. We present the first proof of this approximation factor in the dynamic setting under our depth and work bounds in the batch-dynamic setting. We implemented and experimentally evaluated our algorithm on a 30-core machine with two-way hyper-threading on 11 graphs of varying densities and sizes. Compared to the state-of-the-art algorithms, our algorithm achieves up to a 114.52x speedup against the best parallel implementation, up to a 544.22x speedup against the best approximate sequential algorithm, and up to a 723.72x speedup against the best exact sequential algorithm. We also obtain results for our algorithms on graphs that are orders-of-magnitude larger than those used in previous studies.
+
+"> Fast and Scalable Parallel Batch-Dynamic k-Core Decomposition <br> Quanquan Liu ( Massachusetts Institute of Technology ) </td> 
                         </tr>
                         <tr>
                           <th scope="row">05:45</th>
